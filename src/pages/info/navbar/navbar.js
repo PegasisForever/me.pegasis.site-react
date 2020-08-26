@@ -34,7 +34,6 @@ class MobileNavBar extends React.Component {
         this.close = this.close.bind(this)
     }
 
-
     render() {
         const page = this.props.page
         let title = ""

@@ -1,0 +1,92 @@
+.project-card {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    padding: 0 0 60px;
+    min-width: 250px;
+    flex-grow: 1;
+    min-height: 170px;
+    flex-basis: 0;
+
+    border-bottom: 3px solid transparent;
+    border-radius: 2px;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .05);
+}
+
+.icon-name-wrapper {
+    margin: 0;
+    padding: 0;
+    min-height: 70px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.project-icon {
+    padding: 10px 0 10px 20px;
+    flex-shrink: 0;
+
+    width: 50px;
+    height: 50px;
+}
+
+.project-name {
+    margin: 0 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-size: 25px;
+}
+
+.project-short-des {
+    margin: 0;
+    padding: 5px 20px 8px;
+
+    font-size: 16px;
+    color: #3d3d3d;
+}
+
+.tags-wrapper {
+    padding: 0 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    margin: 2px;
+    padding: 4px 12px;
+
+    font-size: 14px;
+    border-radius: 50px;
+    background-color: #dedede;
+    color: #161616;
+}
+
+.colored-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.fill {
+    background-color: transparent;
+    box-shadow: none;
+    min-height: 0;
+}
+
+.colored-btn {
+    margin: 15px 20px 13px;
+    padding: 10px 15px;
+
+    background-color: #455a64;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 0;
+    outline-width: 0;
+}

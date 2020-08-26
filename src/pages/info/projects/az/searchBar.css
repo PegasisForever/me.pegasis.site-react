@@ -11,6 +11,10 @@
     border-radius: 2px;
 }
 
+.search-bar-mobile {
+    margin-right: 0;
+    margin-top: 20px;
+}
 
 .search-bar > img {
     width: 30px;
@@ -28,6 +32,10 @@
     float: right;
 }
 
+.search-bar-mobile > label {
+    float: left;
+}
+
 .search-bar > input {
     position: absolute;
     top: 0;
@@ -43,6 +51,10 @@
     border: 0;
     outline-width: 0;
     text-align: right;
+}
+
+.search-bar-mobile > input {
+    text-align: left;
 }
 
 .search-bar > input:focus {
