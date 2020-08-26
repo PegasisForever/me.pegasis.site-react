@@ -11,3 +11,7 @@ body{
 a{
     -webkit-tap-highlight-color: transparent;
 }
+
+.page-root{
+    margin-top: 60px;
+}

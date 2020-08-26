@@ -1,0 +1,42 @@
+.slogan-text {
+    text-align: center;
+    font-size: 70px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.green {
+    color: #34a853;
+}
+
+.info-div {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    text-align: center;
+}
+
+h1 {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.line {
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 0;
+    width: 50px;
+
+    border-bottom: 2px solid black;
+}
+
+.info-div > p {
+    font-size: 17px;
+    line-height: 28px;
+}
+
+a {
+    color: black;
+}
