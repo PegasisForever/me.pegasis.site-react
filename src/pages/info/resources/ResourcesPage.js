@@ -18,6 +18,7 @@ export default class ResourcesPage extends React.Component {
                     desc={"Private cloud storage service by Pegasis"}
                     buttonColor={"#009688"}
                     buttonText={"Enter"}
+                    link={"https://cloud.pegasis.site"}
                     background={`/screenshots/pegacloud-desktop${imgExtension}`}
                     mobileBackground={`/screenshots/pegacloud-mobile${imgExtension}`}/>
                 <BackgroundCard
@@ -26,6 +27,7 @@ export default class ResourcesPage extends React.Component {
                     desc={"Minecraft survival server"}
                     buttonColor={"#543711"}
                     buttonText={"Website"}
+                    link={"https://mc.pegasis.site"}
                     background={`/screenshots/pegaworld-desktop${imgExtension}`}
                     mobileBackground={`/screenshots/pegaworld-mobile${imgExtension}`}/>
 

@@ -1,5 +1,6 @@
 import React, {Fragment} from "react"
 import "./backgroundCard.css"
+import {SizedBox} from "../../../components/SizedBox"
 
 export default function BackgroundCard(props) {
     if (props.isMobile) {
@@ -8,10 +9,14 @@ export default function BackgroundCard(props) {
             <div className={"mobile-info-wrapper"}>
                 <p className={"name"}>{props.name}</p>
                 <p className={"desc"}>{props.desc}</p>
-                <button className={"colored-btn-bg-card"}
-                        style={{backgroundColor: props.buttonColor}}>
+                <a className={"colored-btn-bg-card"}
+                   style={{backgroundColor: props.buttonColor}}
+                   href={props.link}
+                   target={"_blank"}
+                   rel={"noopener noreferrer"}>
                     {props.buttonText}
-                </button>
+                </a>
+                <SizedBox height={30}/>
             </div>
         </Fragment>
     } else {
@@ -20,10 +25,14 @@ export default function BackgroundCard(props) {
             <div className={"info-wrapper"}>
                 <p className={"name"}>{props.name}</p>
                 <p className={"desc"}>{props.desc}</p>
-                <button className={"colored-btn-bg-card"}
-                        style={{backgroundColor: props.buttonColor}}>
+                <SizedBox height={8}/>
+                <a className={"colored-btn-bg-card"}
+                   style={{backgroundColor: props.buttonColor}}
+                   href={props.link}
+                   target={"_blank"}
+                   rel={"noopener noreferrer"}>
                     {props.buttonText}
-                </button>
+                </a>
             </div>
         </div>
     }
