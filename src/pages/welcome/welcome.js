@@ -61,7 +61,8 @@ export default class WelcomePage extends React.Component {
     }
 
     render() {
-        return <div>
+        const h = window.innerHeight
+        return <div className={"white-bg"}>
             <Animate
                 start={() => ({
                     logoW: this.state.logoW,
@@ -77,7 +78,7 @@ export default class WelcomePage extends React.Component {
             >
                 {(state) => {
                     const {logoW, logoL, logoT} = state
-                    return <img className={"logo_svg"}
+                    return <img className={"logo-svg"}
                                 src={"/logo_animated.svg"}
                                 style={{
                                     width: logoW + "px",
@@ -88,43 +89,19 @@ export default class WelcomePage extends React.Component {
                 }}
             </Animate>
             {this.state.showEgasis ?
-                <img className={"egasis_svg"}
+                <img className={"egasis-svg"}
                      src={"/egasis_animated.svg"}
                      style={this.egasisStyle}/> : null}
-            <Link className={"red_btn"} to={"/info/about"}>
+            <Link
+                className={"red-btn"}
+                style={{
+                    opacity: this.state.showButton ? 1 : 0,
+                    bottom: this.state.showButton ? (h / 5 + "px") : (h / 5 - 100 + "px"),
+                    left: this.buttonLeft,
+                }}
+                to={"/info/about"}>
                 Find out More
             </Link>
-            <Animate
-                show={this.state.showButton}
-                start={() => {
-                    const h = window.innerHeight
-                    return {
-                        opacity: 0,
-                        bottom: h / 5 - 100,
-                    }
-                }}
-                enter={() => {
-                    const h = window.innerHeight
-                    return {
-                        opacity: [1],
-                        bottom: [h / 5],
-                        timing: {duration: 600, ease: easeQuadInOut},
-                    }
-                }}>
-                {(state) => {
-                    const {opacity, bottom} = state
-                    return <Link
-                        className={"red_btn"}
-                        style={{
-                            opacity: opacity,
-                            bottom: bottom + "px",
-                            left: this.buttonLeft,
-                        }}
-                        to={"/info/about"}>
-                        Find out More
-                    </Link>
-                }}
-            </Animate>
         </div>
     }
 }

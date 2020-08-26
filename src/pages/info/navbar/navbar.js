@@ -5,21 +5,21 @@ import "../../common.css"
 
 function DesktopNavBar(props) {
     const page = props.page
-    return <header className={"header_shadow"}>
-        <img className={"nav_logo"} src={"/logo_filled.svg"} alt="logo"/>
-        <Link className={"nav_btn " + (page === "about" ? "nav_btn_active" : "")}
+    return <header className={"header-shadow"}>
+        <img className={"nav-logo"} src={"/logo_filled.svg"} alt="logo"/>
+        <Link className={"nav-btn " + (page === "about" ? "nav-btn-active" : "")}
               to={"/info/about"}>
             About
         </Link>
-        <Link className={"nav_btn " + (page === "projects" ? "nav_btn_active" : "")}
+        <Link className={"nav-btn " + (page === "projects" ? "nav-btn-active" : "")}
               to={"/info/projects"}>
             Projects
         </Link>
-        <Link className={"nav_btn " + (page === "resources" ? "nav_btn_active" : "")}
+        <Link className={"nav-btn " + (page === "resources" ? "nav-btn-active" : "")}
               to={"/info/resources"}>
             Resources & Links
         </Link>
-        <a className={"nav_btn"} href="https://api.pegasis.site/docs">API</a>
+        <a className={"nav-btn"} href="https://api.pegasis.site/docs">API</a>
     </header>
 }
 
@@ -47,27 +47,27 @@ class MobileNavBar extends React.Component {
         }
         return <Fragment>
             <header>
-                <img className={"nav_logo"} src={"/logo_filled.svg"} alt="logo"/>
+                <img className={"nav-logo"} src={"/logo_filled.svg"} alt="logo"/>
                 <p className={"title"}>{title}</p>
-                <button className={"expend_btn"} onClick={this.toggleOpen}/>
+                <button className={"expend-btn"} onClick={this.toggleOpen}/>
             </header>
-            <div className={"mob_nav_drop_div header_shadow"} style={{top: this.state.isOpen ? "0" : "-220px"}}>
-                <Link className={"mobile_nav_btn " + (page === "about" ? "mobile_nav_btn_active" : "")}
+            <div className={"mob-nav-drop-div header-shadow"} style={{top: this.state.isOpen ? "0" : "-220px"}}>
+                <Link className={"mobile-nav-btn " + (page === "about" ? "mobile-nav-btn-active" : "")}
                       to={"/info/about"}
                       onClick={this.close}>
                     About
                 </Link>
-                <Link className={"mobile_nav_btn " + (page === "projects" ? "mobile_nav_btn_active" : "")}
+                <Link className={"mobile-nav-btn " + (page === "projects" ? "mobile-nav-btn-active" : "")}
                       to={"/info/projects"}
                       onClick={this.close}>
                     Projects
                 </Link>
-                <Link className={"mobile_nav_btn " + (page === "resources" ? "mobile_nav_btn_active" : "")}
+                <Link className={"mobile-nav-btn " + (page === "resources" ? "mobile-nav-btn-active" : "")}
                       to={"/info/resources"}
                       onClick={this.close}>
                     Resources & Links
                 </Link>
-                <a className="mobile_nav_btn" href="https://api.pegasis.site/docs">
+                <a className="mobile-nav-btn" href="https://api.pegasis.site/docs">
                     API
                 </a>
             </div>
