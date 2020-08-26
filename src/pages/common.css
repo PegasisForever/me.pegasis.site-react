@@ -2,3 +2,12 @@
     font-family: "Fira Sans";
     src: url(/FiraSans-Regular.woff);
 }
+
+body{
+    background-color: #eceff1;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+a{
+    -webkit-tap-highlight-color: transparent;
+}

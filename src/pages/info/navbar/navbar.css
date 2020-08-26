@@ -1,0 +1,109 @@
+header{
+    position: fixed;
+    height: 60px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+
+    background-color: white;
+}
+
+.header_shadow{
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.mob_nav_drop_div{
+    position: fixed;
+    height: 280px;
+    top: -220px;
+    left: 0;
+    width: 100%;
+    z-index: 998;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    background-color: white;
+
+    -webkit-transition: all 300ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
+    transition: all 300ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
+}
+
+.nav_logo{
+    display: block;
+    width: 44px;
+    height: 44px;
+    float: left;
+    margin: 8px 20px 0 20px;
+}
+
+.nav_btn{
+    float: left;
+    margin-left: 30px;
+    height: 58px;
+    line-height: 60px;
+
+    text-decoration: none;
+    font-size: 15px;
+    color: #777;
+    border-bottom: 2px solid rgba(0,0,0, 0);
+}
+
+.nav_btn:not(.nav_btn_active):hover{
+    border-bottom: 2px solid #0652DD55;
+}
+
+.nav_btn_active{
+    color: black;
+    border-bottom: 2px solid #0652DD;
+}
+
+.title{
+    display: inline;
+    float: left;
+    margin: 18px 0 0;
+    white-space: nowrap;
+
+    font-size: 22px;
+}
+
+.expend_btn{
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+
+    background-color: transparent;
+    border: 0;
+    outline-width: 0;
+    background-image: url("/expand_btn.svg");
+}
+
+.mobile_nav_btn{
+    display: block;
+    text-align: center;
+    line-height: 45px;
+    height: 45px;
+    margin: 5px auto;
+    width: 70%;
+
+    background-color: transparent;
+    text-decoration: none;
+    border: 0;
+    border-radius: 3px;
+    outline-width: 0;
+    color: black;
+    font-size: 20px;
+}
+
+.mobile_nav_btn:not(.mobile_nav_btn_active):hover{
+    background-color: #0652DD55;
+}
+
+
+.mobile_nav_btn_active{
+    color: white;
+    background-color: #0652DD;
+}

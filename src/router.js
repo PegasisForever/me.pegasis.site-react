@@ -19,18 +19,20 @@ export default function AppRouter() {
                     <WelcomePage/>
                 </Route>
                 <Route path="/info">
-                    <InfoNavBar/>
                     <Switch>
                         <Route exact={true} path="/info/about">
+                            <InfoNavBar page={"about"}/>
                             <AboutPage/>
                         </Route>
                         {/*<Route path="/info/projects/:projectName">*/}
                         {/*    <ProjectPage/>*/}
                         {/*</Route>*/}
                         <Route exact={true} path="/info/projects">
+                            <InfoNavBar page={"projects"}/>
                             <ProjectsListPage/>
                         </Route>
                         <Route exact={true} path="/info/resources">
+                            <InfoNavBar page={"resources"}/>
                             <ResourcesPage/>
                         </Route>
                         <Route path="*">
