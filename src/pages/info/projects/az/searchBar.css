@@ -1,0 +1,54 @@
+.search-bar {
+    position: relative;
+
+    float: right;
+    width: 300px;
+    height: 40px;
+    margin-top: 30px;
+    margin-right: 10px;
+
+    background-color: white;
+    border-radius: 2px;
+}
+
+
+.search-bar > img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+
+    float: right;
+}
+
+.search-bar > label {
+    margin: 11px 5px 5px 10px;
+
+    font-size: 16px;
+    color: #5c5c5c;
+    float: right;
+}
+
+.search-bar > input {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    width: 245px;
+
+    font-size: 18px;
+    color: #5c5c5c;
+    background-color: transparent;
+    border: 0;
+    outline-width: 0;
+    text-align: right;
+}
+
+.search-bar > input:focus {
+    background-color: white;
+}
+
+.search-bar > input:valid {
+    background-color: white;
+}

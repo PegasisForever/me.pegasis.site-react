@@ -9,9 +9,19 @@ body {
 }
 
 a {
+    text-decoration: none;
     -webkit-tap-highlight-color: transparent;
 }
 
 .page-root {
     margin-top: 60px;
+}
+
+.site-width{
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 3%;
+    padding-left: 3%;
+
+    max-width: 1000px;
 }

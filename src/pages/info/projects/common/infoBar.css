@@ -1,0 +1,48 @@
+.info-bar {
+    width: 100%;
+    padding-bottom: 30px;
+
+
+    background-color: #455a64;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.info-bar h1 {
+    padding-top: 30px;
+    margin: 0 0 20px;
+
+    font-size: 45px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: normal;
+}
+
+.info-bar p {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+
+    line-height: 32px;
+    font-size: 16px;
+}
+
+.info-bar a {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 8px;
+
+    text-decoration: underline;
+    text-decoration-color: white;
+    color: white;
+    line-height: 32px;
+    font-size: 16px;
+}
+
+.site-width-text {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    max-width: 1000px;
+}

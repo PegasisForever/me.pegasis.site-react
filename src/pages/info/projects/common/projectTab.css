@@ -1,0 +1,27 @@
+.project-tab-container {
+    height: 80px;
+    display: flex;
+}
+
+.project-tab-container > a {
+    margin: 20px 10px 10px;
+    padding: 15px 6px;
+
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    background-color: transparent;
+    border: 0;
+    outline-width: 0;
+    color: #797979;
+
+    cursor: pointer;
+}
+
+.project-tab-container > a.active {
+    color: #5c5c5c;
+    border-bottom: 3px solid #5c5c5c;
+}
+
+.project-tab-container > a:not(.active):hover {
+    border-bottom: 3px solid #5c5c5c55;
+}

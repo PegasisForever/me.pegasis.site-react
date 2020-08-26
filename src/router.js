@@ -8,8 +8,9 @@ import {
 import WelcomePage from "./pages/welcome/welcome"
 import InfoNavBar from "./pages/info/navbar/navbar"
 import AboutPage from "./pages/info/about/about"
-import ProjectsListPage from "./pages/info/projects/list/projects"
 import ResourcesPage from "./pages/info/resources/resources"
+import ProjectsAZPage from "./pages/info/projects/az/ProjectsAZPage"
+import RecommendProjectsPage from "./pages/info/projects/recommend/RecommendProjectsPage"
 
 export default function AppRouter() {
     return (
@@ -27,9 +28,19 @@ export default function AppRouter() {
                         {/*<Route path="/info/projects/:projectName">*/}
                         {/*    <ProjectPage/>*/}
                         {/*</Route>*/}
-                        <Route exact={true} path="/info/projects">
+                        <Route path="/info/projects">
                             <InfoNavBar page={"projects"}/>
-                            <ProjectsListPage/>
+                            <Switch>
+                                <Route exact={true} path="/info/projects/a-z">
+                                    <ProjectsAZPage/>
+                                </Route>
+                                <Route exact={true} path="/info/projects/recommend">
+                                    <RecommendProjectsPage/>
+                                </Route>
+                                <Route path="*">
+                                    <Redirect to="/info/projects/a-z"/>
+                                </Route>
+                            </Switch>
                         </Route>
                         <Route exact={true} path="/info/resources">
                             <InfoNavBar page={"resources"}/>

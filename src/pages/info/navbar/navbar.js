@@ -12,7 +12,7 @@ function DesktopNavBar(props) {
             About
         </Link>
         <Link className={"nav-btn " + (page === "projects" ? "nav-btn-active" : "")}
-              to={"/info/projects"}>
+              to={"/info/projects/a-z"}>
             Projects
         </Link>
         <Link className={"nav-btn " + (page === "resources" ? "nav-btn-active" : "")}
@@ -58,7 +58,7 @@ class MobileNavBar extends React.Component {
                     About
                 </Link>
                 <Link className={"mobile-nav-btn " + (page === "projects" ? "mobile-nav-btn-active" : "")}
-                      to={"/info/projects"}
+                      to={"/info/projects/a-z"}
                       onClick={this.close}>
                     Projects
                 </Link>
