@@ -24,6 +24,7 @@ export default class RecommendProjectsPage extends React.Component {
 
     componentDidMount() {
         window.addEventListener("resize", this.updateDimensions)
+        document.title = "Projects | Pegasis"
     }
 
     componentWillUnmount() {

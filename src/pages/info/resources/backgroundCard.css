@@ -1,0 +1,70 @@
+.card {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    height: 400px;
+
+    border-radius: 2px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-wrapper {
+    margin-left: 70px;
+    padding-top: 110px;
+
+    width: 40%;
+    color: white;
+}
+
+.info-wrapper > .name {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.info-wrapper > .desc {
+    font-size: 18px;
+}
+
+.colored-btn-bg-card{
+    margin: 0;
+    padding: 10px 15px;
+
+    background-color: #455a64;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 0;
+    outline-width: 0;
+}
+
+.mobile-card-img {
+    margin-top: 20px;
+    width: 100%;
+
+    border-radius: 2px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+}
+
+.mobile-info-wrapper {
+    text-align: center;
+}
+
+.mobile-info-wrapper > .name {
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    font-size: 26px;
+}
+
+.mobile-info-wrapper > .desc {
+    margin-top: 10px;
+
+    font-size: 18px;
+}
+
+.mobile-info-wrapper > .colored-btn-bg-card {
+    margin-bottom: 30px;
+}

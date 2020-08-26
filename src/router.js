@@ -8,7 +8,7 @@ import {
 import WelcomePage from "./pages/welcome/welcome"
 import InfoNavBar from "./pages/info/navbar/navbar"
 import AboutPage from "./pages/info/about/about"
-import ResourcesPage from "./pages/info/resources/resources"
+import ResourcesPage from "./pages/info/resources/ResourcesPage"
 import ProjectsAZPage from "./pages/info/projects/az/ProjectsAZPage"
 import RecommendProjectsPage from "./pages/info/projects/recommend/RecommendProjectsPage"
 

@@ -3,8 +3,12 @@ import "./about.css"
 import "../../common.css"
 
 export default class AboutPage extends React.Component {
+    componentDidMount() {
+        document.title = "About | Pegasis"
+    }
+
     render() {
-        const margin = window.innerHeight / 2 - 80
+        const margin = window.innerHeight / 2 - 140
 
         return <div className={"page-root"}>
             <p className={"slogan-text"} style={{

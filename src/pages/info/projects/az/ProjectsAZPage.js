@@ -55,6 +55,7 @@ export default class ProjectsAZPage extends React.Component {
 
     componentDidMount() {
         window.addEventListener("resize", this.updateDimensions)
+        document.title = "Projects | Pegasis"
     }
 
     componentWillUnmount() {
