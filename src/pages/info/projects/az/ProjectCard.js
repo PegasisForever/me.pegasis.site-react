@@ -3,7 +3,7 @@ import "./projectCard.css"
 
 export default function ProjectCard(props) {
     if (props.fill) {
-        return <div className={"project-card fill"}/>
+        return <div className={"project-card project-card-fill"}/>
     }
 
     const project = props.project
