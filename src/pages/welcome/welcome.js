@@ -85,13 +85,15 @@ export default class WelcomePage extends React.Component {
                                     height: logoW + "px",
                                     left: logoL + "px",
                                     top: logoT + "px",
-                                }}/>
+                                }}
+                                alt={""}/>
                 }}
             </Animate>
             {this.state.showEgasis ?
                 <img className={"egasis-svg"}
                      src={"/egasis_animated.svg"}
-                     style={this.egasisStyle}/> : null}
+                     style={this.egasisStyle}
+                     alt={""}/> : null}
             <Link
                 className={"red-btn"}
                 style={{
