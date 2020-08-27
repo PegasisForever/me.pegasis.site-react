@@ -1,10 +1,11 @@
-import React from "react"
+import React, {useEffect} from "react"
 import {
     BrowserRouter as Router,
     Redirect,
     Switch,
     Route,
     useParams,
+    useLocation,
 } from "react-router-dom"
 import WelcomePage from "./pages/welcome/welcome"
 import InfoNavBar from "./pages/info/navbar/navbar"
@@ -34,20 +35,33 @@ function ProjectListRedirect() {
     }
 }
 
+function ScrollToTop() {
+    const {pathname} = useLocation()
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [pathname])
+
+    return null
+}
+
 export default function AppRouter() {
     return (
         <Router>
             <Switch>
                 <Route exact={true} path="/">
+                    <ScrollToTop/>
                     <WelcomePage/>
                 </Route>
                 <Route path="/info">
                     <Switch>
                         <Route exact={true} path="/info/about">
+                            <ScrollToTop/>
                             <InfoNavBar page={"about"}/>
                             <AboutPage/>
                         </Route>
                         <Route path="/info/project/:projectName">
+                            <ScrollToTop/>
                             <ProjectPageRedirect/>
                         </Route>
                         <Route path="/info/projects">
@@ -68,10 +82,12 @@ export default function AppRouter() {
                             </Switch>
                         </Route>
                         <Route exact={true} path="/info/resources">
+                            <ScrollToTop/>
                             <InfoNavBar page={"resources"}/>
                             <ResourcesPage/>
                         </Route>
                         <Route path="*">
+                            <ScrollToTop/>
                             <Redirect to="/info/about"/>
                         </Route>
                     </Switch>

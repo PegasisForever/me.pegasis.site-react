@@ -25,7 +25,6 @@ export default class ProjectPage extends React.Component {
         const project = this.props.project
         let color = project.color
         if (color === "") color = "455a64"
-        console.log(project)
 
         return <Fragment>
             <NavBar title={this.props.project.projectName}/>
@@ -53,6 +52,7 @@ export default class ProjectPage extends React.Component {
                             <YoutubeEmbedded key={recording} id={recording}/>)}
                         {project.screenshots.map((screenshot) =>
                             <img className={"screenshot"}
+                                 key={screenshot}
                                  src={"/screenshots/" + screenshot + imgExtension}
                                  alt={"screenshot"}/>)}
                     </div>

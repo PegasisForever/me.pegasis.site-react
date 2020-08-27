@@ -16,6 +16,9 @@ function ProjectList(props) {
     </div>
 }
 
+let lastScrollX = 0
+let lastScrollY = 0
+
 export default class ProjectsAZPage extends React.Component {
     state = {
         searchText: this.props.searchText,
@@ -62,9 +65,12 @@ export default class ProjectsAZPage extends React.Component {
         document.title = this.state.searchText === "" ?
             "Projects | Pegasis" :
             `Projects Search "${this.state.searchText}" | Pegasis`
+        window.scrollTo(lastScrollX, lastScrollY)
     }
 
     componentWillUnmount() {
         window.removeEventListener("resize", this.updateDimensions)
+        lastScrollX = window.scrollX
+        lastScrollY = window.scrollY
     }
 }
