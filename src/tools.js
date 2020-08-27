@@ -17,3 +17,12 @@ export function getImgExtension() {
 
     return imgSuffix
 }
+
+export function clearSelection() {
+    if(document.selection && document.selection.empty) {
+        document.selection.empty();
+    } else if(window.getSelection) {
+        let sel = window.getSelection();
+        sel.removeAllRanges();
+    }
+}

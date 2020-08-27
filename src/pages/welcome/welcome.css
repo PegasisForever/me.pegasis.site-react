@@ -1,9 +1,11 @@
 .logo-svg {
     position: absolute;
+    pointer-events: none;
 }
 
 .egasis-svg {
     position: absolute;
+    pointer-events: none;
 }
 
 .red-btn {

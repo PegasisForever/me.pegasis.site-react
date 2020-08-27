@@ -1,9 +1,10 @@
 import React from "react"
-import {Link} from "react-router-dom"
+import {Link, Redirect} from "react-router-dom"
 import {Animate} from "react-move"
 import {easeQuadInOut} from "d3-ease"
 import "../common.css"
 import "./welcome.css"
+import {clearSelection} from "../../tools"
 
 export default class WelcomePage extends React.Component {
     constructor(props) {
@@ -18,12 +19,15 @@ export default class WelcomePage extends React.Component {
         }
 
         this.state = {
+            skipped: false,
             logoW: logoW,
             logoL: w / 2 - logoW / 2,
             logoT: h / 2 - logoW,
             showEgasis: false,
             showButton: false,
         }
+
+        this.skip = this.skip.bind(this)
     }
 
 
@@ -35,34 +39,50 @@ export default class WelcomePage extends React.Component {
 
         const logoX = -this.state.logoW * 0.9
         setTimeout(() => {
-            this.setState({
-                logoW: this.state.logoW * 0.8,
-                logoL: w / 2 - this.state.logoW * 0.8 / 2 + logoX,
-                logoT: h / 2 - this.state.logoW * 0.8,
-            })
+            if (!this.state.skipped) {
+                this.setState({
+                    logoW: this.state.logoW * 0.8,
+                    logoL: w / 2 - this.state.logoW * 0.8 / 2 + logoX,
+                    logoT: h / 2 - this.state.logoW * 0.8,
+                })
+            }
         }, 3000)
         setTimeout(() => {
-            this.egasisStyle = {
-                width: this.state.logoW * 0.8 * 2.6 + "px",
-                height: this.state.logoW * 0.8 + "px",
-                left: (w / 2 + this.state.logoW / 2 + logoX - this.state.logoW * 0.05) + "px",
-                top: (h / 2 - this.state.logoW * 0.1 - this.state.logoW / 2) + "px",
+            if (!this.state.skipped) {
+                this.egasisStyle = {
+                    width: this.state.logoW * 0.8 * 2.6 + "px",
+                    height: this.state.logoW * 0.8 + "px",
+                    left: (w / 2 + this.state.logoW / 2 + logoX - this.state.logoW * 0.05) + "px",
+                    top: (h / 2 - this.state.logoW * 0.1 - this.state.logoW / 2) + "px",
+                }
+                this.setState({
+                    showEgasis: true,
+                })
             }
-            this.setState({
-                showEgasis: true,
-            })
         }, 3500)
         setTimeout(() => {
-            this.buttonLeft = (w / 2 - 75) + "px"
-            this.setState({
-                showButton: true,
-            })
+            if (!this.state.skipped) {
+                this.buttonLeft = (w / 2 - 75) + "px"
+                this.setState({
+                    showButton: true,
+                })
+            }
         }, 4200)
     }
 
+    skip() {
+        clearSelection()
+        this.setState({
+            skipped: true,
+        })
+    }
+
     render() {
+        if (this.state.skipped) {
+            return <Redirect to={"/info/about"}/>
+        }
         const h = window.innerHeight
-        return <div className={"white-bg"}>
+        return <div className={"white-bg"} onDoubleClick={this.skip}>
             <Animate
                 start={() => ({
                     logoW: this.state.logoW,
