@@ -72,8 +72,12 @@ class MobileNavBar extends React.Component {
             </div>
             <div
                 className={"mobile-nav-overlay"}
-                style={{backgroundColor: `rgba(0, 0, 0, ${this.state.isOpen ? "0.5" : "0"})`}}
-                onPointerDown={this.close}/>
+                style={{
+                    backgroundColor: `rgba(0, 0, 0, ${this.state.isOpen ? "0.5" : "0"})`,
+                    pointerEvents: this.state.isOpen ? "auto" : "none",
+                }}
+                onPointerDown={this.close}
+            />
         </Fragment>
     }
 
@@ -84,9 +88,11 @@ class MobileNavBar extends React.Component {
     }
 
     close() {
-        this.setState({
-            isOpen: false,
-        })
+        if (this.state.isOpen) {
+            this.setState({
+                isOpen: false,
+            })
+        }
     }
 }
 
