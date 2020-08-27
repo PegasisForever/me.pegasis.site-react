@@ -18,7 +18,7 @@ function ProjectList(props) {
 
 export default class ProjectsAZPage extends React.Component {
     state = {
-        searchText: "",
+        searchText: this.props.searchText,
     }
 
     constructor(props) {
@@ -30,6 +30,10 @@ export default class ProjectsAZPage extends React.Component {
         this.setState({
             searchText: text,
         })
+        const newTitle = text === "" ? "Projects | Pegasis" : `Projects Search "${text}" | Pegasis`
+        const newUrl = text === "" ? "/info/projects/a-z" : ("/info/projects/search/" + text)
+        document.title = newTitle
+        window.history.replaceState(null, newTitle, newUrl)
     }
 
     render() {
@@ -55,7 +59,9 @@ export default class ProjectsAZPage extends React.Component {
 
     componentDidMount() {
         window.addEventListener("resize", this.updateDimensions)
-        document.title = "Projects | Pegasis"
+        document.title = this.state.searchText === "" ?
+            "Projects | Pegasis" :
+            `Projects Search "${this.state.searchText}" | Pegasis`
     }
 
     componentWillUnmount() {

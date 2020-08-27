@@ -25,6 +25,15 @@ function ProjectPageRedirect() {
     }
 }
 
+function ProjectListRedirect() {
+    let {searchText} = useParams()
+    if (searchText) {
+        return <ProjectsAZPage searchText={searchText}/>
+    } else {
+        return <ProjectsAZPage searchText={""}/>
+    }
+}
+
 export default function AppRouter() {
     return (
         <Router>
@@ -45,7 +54,10 @@ export default function AppRouter() {
                             <InfoNavBar page={"projects"}/>
                             <Switch>
                                 <Route exact={true} path="/info/projects/a-z">
-                                    <ProjectsAZPage/>
+                                    <ProjectListRedirect/>
+                                </Route>
+                                <Route path="/info/projects/search/:searchText">
+                                    <ProjectListRedirect/>
                                 </Route>
                                 <Route exact={true} path="/info/projects/recommend">
                                     <RecommendProjectsPage/>
