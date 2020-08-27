@@ -1,5 +1,6 @@
 import React from "react"
 import "./projectCard.css"
+import {Link} from "react-router-dom"
 
 export default function ProjectCard(props) {
     if (props.fill) {
@@ -20,10 +21,11 @@ export default function ProjectCard(props) {
         <div className={"tags-wrapper"}>
             {project.tags.map((tag) => (<span key={tag} className={"tag"}>{tag}</span>))}
         </div>
-        {project.longDesc !== "" ? <button
-            className={"colored-btn-project-card"}
+        {project.longDesc !== "" ? <Link
+            to={"/info/project/" + project.projectName}
+            className={"colored-btn"}
             style={{backgroundColor: "#" + color}}>
             Learn More
-        </button> : null}
+        </Link> : null}
     </div>
 }

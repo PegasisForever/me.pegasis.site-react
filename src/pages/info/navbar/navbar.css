@@ -1,18 +1,3 @@
-header{
-    position: fixed;
-    height: 60px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-
-    background-color: white;
-}
-
-.header-shadow{
-    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-}
-
 .mob-nav-drop-div{
     position: fixed;
     height: 280px;

@@ -4,6 +4,7 @@ import {
     Redirect,
     Switch,
     Route,
+    useParams,
 } from "react-router-dom"
 import WelcomePage from "./pages/welcome/welcome"
 import InfoNavBar from "./pages/info/navbar/navbar"
@@ -11,6 +12,18 @@ import AboutPage from "./pages/info/about/about"
 import ResourcesPage from "./pages/info/resources/ResourcesPage"
 import ProjectsAZPage from "./pages/info/projects/az/ProjectsAZPage"
 import RecommendProjectsPage from "./pages/info/projects/recommend/RecommendProjectsPage"
+import ProjectPage from "./pages/info/project/ProjectPage"
+import {getProject} from "./pages/info/projectsData"
+
+function ProjectPageRedirect() {
+    let {projectName} = useParams()
+    const project = getProject(projectName)
+    if (project) {
+        return <ProjectPage project={project}/>
+    } else {
+        return <Redirect to="/info/projects/a-z"/>
+    }
+}
 
 export default function AppRouter() {
     return (
@@ -25,9 +38,9 @@ export default function AppRouter() {
                             <InfoNavBar page={"about"}/>
                             <AboutPage/>
                         </Route>
-                        {/*<Route path="/info/projects/:projectName">*/}
-                        {/*    <ProjectPage/>*/}
-                        {/*</Route>*/}
+                        <Route path="/info/project/:projectName">
+                            <ProjectPageRedirect/>
+                        </Route>
                         <Route path="/info/projects">
                             <InfoNavBar page={"projects"}/>
                             <Switch>

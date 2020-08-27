@@ -537,5 +537,11 @@ export function getProjectsList(searchText) {
 }
 
 export function getProject(name) {
-    return {}
+    const projects = JSON.parse(projectsData)
+    const project = projects.find((project) => project.projectName === name)
+    if (project && project.longDesc !== "") {
+        return project
+    } else {
+        return undefined
+    }
 }

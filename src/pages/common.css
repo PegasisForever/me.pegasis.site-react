@@ -25,3 +25,27 @@ a {
 
     max-width: 1000px;
 }
+
+header{
+    position: fixed;
+    height: 60px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+
+    background-color: white;
+}
+
+.header-shadow{
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.site-width-text {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    max-width: 1000px;
+}

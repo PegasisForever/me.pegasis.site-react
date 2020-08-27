@@ -14,7 +14,7 @@
     box-shadow: 0 0 8px rgba(0, 0, 0, .05);
 }
 
-.icon-name-wrapper {
+.project-card .icon-name-wrapper {
     margin: 0;
     padding: 0;
     min-height: 70px;
@@ -25,7 +25,7 @@
 }
 
 
-.project-icon {
+.project-card .project-icon {
     padding: 10px 0 10px 20px;
     flex-shrink: 0;
 
@@ -33,7 +33,7 @@
     height: 50px;
 }
 
-.project-name {
+.project-card .project-name {
     margin: 0 20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -41,7 +41,7 @@
     font-size: 25px;
 }
 
-.project-short-des {
+.project-card .project-short-des {
     margin: 0;
     padding: 5px 20px 8px;
 
@@ -49,14 +49,14 @@
     color: #3d3d3d;
 }
 
-.tags-wrapper {
+.project-card .tags-wrapper {
     padding: 0 20px;
 
     display: flex;
     flex-wrap: wrap;
 }
 
-.tag {
+.project-card .tag {
     margin: 2px;
     padding: 4px 12px;
 
@@ -76,7 +76,7 @@
     margin-bottom: 0;
 }
 
-.colored-btn-project-card {
+.project-card .colored-btn {
     position: absolute;
     bottom: 0;
     right: 0;

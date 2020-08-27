@@ -1,5 +1,6 @@
 import React from "react"
 import "./infoBar.css"
+import "../../../common.css"
 
 export default function InfoBar(props){
     return <div className={"info-bar"}>

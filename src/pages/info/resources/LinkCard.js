@@ -7,6 +7,8 @@ export default function LinkCard(props) {
     }
     return <div className={"link-card"}>
         <p>{props.title}</p>
-        <a href={"https://" + props.link}>{props.link}</a>
+        <a href={"https://" + props.link}
+           target={"_blank"}
+           rel={"noopener noreferrer"}>{props.link}</a>
     </div>
 }

@@ -1,3 +1,10 @@
+const MarkdownIt = require("markdown-it")
+const md = new MarkdownIt()
+
+export function parseMarkDown(text) {
+    return md.render(text)
+}
+
 export function getImgExtension() {
     const ua = navigator.userAgent.toLowerCase()
     const isIos = /ipad|iphone|ipod/.test(ua) && !window.MSStream

@@ -6,7 +6,7 @@ import ProjectTab from "../common/ProjectTab"
 import SearchBar from "./SearchBar"
 import LinearLayout from "../../../../components/linearLayout"
 import ProjectCard from "./ProjectCard"
-import {getProjectsList} from "../common/projectsData"
+import {getProjectsList} from "../../projectsData"
 
 function ProjectList(props) {
     return <div className={"site-width project-list"}>
