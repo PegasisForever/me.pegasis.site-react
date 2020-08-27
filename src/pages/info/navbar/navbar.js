@@ -70,6 +70,10 @@ class MobileNavBar extends React.Component {
                     API
                 </a>
             </div>
+            <div
+                className={"mobile-nav-overlay"}
+                style={{backgroundColor: `rgba(0, 0, 0, ${this.state.isOpen ? "0.5" : "0"})`}}
+                onPointerDown={this.close}/>
         </Fragment>
     }
 

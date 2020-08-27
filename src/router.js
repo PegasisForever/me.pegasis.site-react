@@ -57,7 +57,7 @@ export default function AppRouter() {
                     <Switch>
                         <Route exact={true} path="/info/about">
                             <ScrollToTop/>
-                            <InfoNavBar page={"about"}/>
+                            <InfoNavBar key={"nav"} page={"about"}/>
                             <AboutPage/>
                         </Route>
                         <Route path="/info/project/:projectName">
@@ -65,7 +65,7 @@ export default function AppRouter() {
                             <ProjectPageRedirect/>
                         </Route>
                         <Route path="/info/projects">
-                            <InfoNavBar page={"projects"}/>
+                            <InfoNavBar key={"nav"} page={"projects"}/>
                             <Switch>
                                 <Route exact={true} path="/info/projects/a-z">
                                     <ProjectListRedirect/>
@@ -83,7 +83,7 @@ export default function AppRouter() {
                         </Route>
                         <Route exact={true} path="/info/resources">
                             <ScrollToTop/>
-                            <InfoNavBar page={"resources"}/>
+                            <InfoNavBar key={"nav"} page={"resources"}/>
                             <ResourcesPage/>
                         </Route>
                         <Route path="*">
