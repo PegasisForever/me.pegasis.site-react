@@ -37,8 +37,8 @@ export default class AboutPage extends React.Component {
                 <p>Perparing for University of Waterloo<br/>
                     Typora-cli<br/>
                     Teach Assist client<br/>
-                    Contests?
-                    <del>No, I don't like them</del>
+                    Contests?&nbsp;
+                    <del>No, I don't like them</del>&nbsp;
                     Apr. 18 2020: now I like them.
                 </p>
             </div>
