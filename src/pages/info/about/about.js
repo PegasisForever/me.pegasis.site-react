@@ -23,7 +23,7 @@ export default class AboutPage extends React.Component {
             <div className={"info-div"}>
                 <h1>About Me</h1>
                 <div className={"line"}/>
-                <p>A grade 11 student<br/>
+                <p>A grade 12 student<br/>
                     ON, Canada<br/>
                     Middlefield Collegiate Institute<br/>
                     Love everything about electronic<br/>
