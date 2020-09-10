@@ -52,28 +52,6 @@ const projectsData = `[
         ]
     },
     {
-        "projectName": "Mapleleaf VMS APP - Demo",
-        "icon": "logos/en_logo.svg",
-        "color":"5b9bd5",
-        "tags": [
-            "Done",
-            "Android",
-            "iOS",
-            "Flutter",
-            "Dart"
-        ],
-        "shortDesc": "An demo of mobile client of volunteering for my pervious school.",
-        "buttons": [],
-        "longDesc": "One of my friend, [Enson](https://www.ensonyan.com/), developed a [volunteer management system](https://volunteer.ensonyan.com/) for his school, Mapleleaf International School (I was a student of this school). And he wanted a client for his system. I made this demo to show case him how to do cross-platform developing using flutter and how to use restful API to communicate with server.",
-        "screenshots": [
-            "vmsdemo-1",
-            "vmsdemo-2",
-            "vmsdemo-3",
-            "vmsdemo-4"
-        ],
-        "recordings": []
-    },
-    {
         "projectName": "Mirrors Killer",
         "icon": "",
         "color":"",
@@ -136,17 +114,6 @@ const projectsData = `[
             ["Download Android", "https://cloud.pegasis.site/s/zGR77NTNi2TYjMK"]
         ],
         "longDesc": "The official client for teach assist is so ugly and hard to use. So I made a better one.\\n\\n- Material Design\\n- Trend chart\\n- Better small screen support\\n- View mark offline\\n",
-        "screenshots": [],
-        "recordings": []
-    },
-    {
-        "projectName": "Command Bookmarks",
-        "icon": "",
-        "color": "",
-        "tags": ["On Going","Linux","C++"],
-        "shortDesc": "A tool to save commands for later use.",
-        "buttons": [],
-        "longDesc": "Tired of googling commands every time you need to use them? Tired of typing a long sting every time? Try this Command Bookmark! (I know I haven’t released it yet lol)\\n\\nThis is a simple tool to save commands so you can reuse them later.",
         "screenshots": [],
         "recordings": []
     },
@@ -245,50 +212,6 @@ const projectsData = `[
         "recordings": []
     },
     {
-        "projectName": "MC Server Watcher",
-        "icon": "",
-        "color": "",
-        "tags": [],
-        "shortDesc": "",
-        "buttons": [],
-        "longDesc": "",
-        "screenshots": [],
-        "recordings": []
-    },
-    {
-        "projectName": "Typora CLI",
-        "icon": "",
-        "color": "",
-        "tags": [],
-        "shortDesc": "",
-        "buttons": [],
-        "longDesc": "",
-        "screenshots": [],
-        "recordings": []
-    },
-    {
-        "projectName": "CIDE",
-        "icon": "",
-        "color": "",
-        "tags": [],
-        "shortDesc": "",
-        "buttons": [],
-        "longDesc": "",
-        "screenshots": [],
-        "recordings": []
-    },
-    {
-        "projectName": "Counter",
-        "icon": "",
-        "color": "",
-        "tags": [],
-        "shortDesc": "",
-        "buttons": [],
-        "longDesc": "",
-        "screenshots": [],
-        "recordings": []
-    },
-    {
         "projectName": "Function Killer",
         "icon": "",
         "color": "",
@@ -355,17 +278,6 @@ const projectsData = `[
         "recordings": []
     },
     {
-        "projectName": "PaperNote",
-        "icon": "",
-        "color": "",
-        "tags": [],
-        "shortDesc": "",
-        "buttons": [],
-        "longDesc": "",
-        "screenshots": [],
-        "recordings": []
-    },
-    {
         "projectName": "The Light",
         "icon": "",
         "color": "",
@@ -399,24 +311,18 @@ const projectsData = `[
         "recordings": []
     },
     {
-        "projectName": "GROK Account Server",
-        "icon": "",
-        "color": "",
-        "tags": [],
-        "shortDesc": "",
-        "buttons": [],
-        "longDesc": "",
-        "screenshots": [],
-        "recordings": []
-    },
-    {
         "projectName": "Chart Maker",
-        "icon": "",
-        "color": "",
-        "tags": [],
-        "shortDesc": "",
-        "buttons": [],
-        "longDesc": "",
+        "icon": "logos/chart_maker_icon.png",
+        "color": "ff740e",
+        "tags": ["Python"],
+        "shortDesc": "Convert a list of test results to a chart of trend.",
+        "buttons": [
+            [
+                "Github",
+                "https://github.com/PegasisForever/Chart_Maker"
+            ]
+        ],
+        "longDesc": " ",
         "screenshots": [],
         "recordings": []
     },
@@ -424,21 +330,15 @@ const projectsData = `[
         "projectName": "Kaggle PUBG",
         "icon": "",
         "color": "",
-        "tags": [],
-        "shortDesc": "",
-        "buttons": [],
-        "longDesc": "",
-        "screenshots": [],
-        "recordings": []
-    },
-    {
-        "projectName": "Flight Simulator",
-        "icon": "",
-        "color": "",
-        "tags": [],
-        "shortDesc": "",
-        "buttons": [],
-        "longDesc": "",
+        "tags": ["Machine Learning", "Python"],
+        "shortDesc": "Playing around with kaggle and sklearn.",
+        "buttons": [
+            [
+                "Submission",
+                "https://www.kaggle.com/pegasis0/pubg-perdict-randomforest"
+            ]
+        ],
+        "longDesc": " ",
         "screenshots": [],
         "recordings": []
     },
