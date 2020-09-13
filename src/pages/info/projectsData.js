@@ -214,12 +214,21 @@ const projectsData = `[
     {
         "projectName": "Function Killer",
         "icon": "",
-        "color": "",
-        "tags": [],
-        "shortDesc": "",
-        "buttons": [],
-        "longDesc": "",
-        "screenshots": [],
+        "color": "00c42b",
+        "tags": ["Lua"],
+        "shortDesc": "Function graphing calculator",
+        "buttons": [
+            [
+                "Source Code",
+                "https://cloud.pegasis.site/s/NZLWrXzg36TatXX"
+            ]
+        ],
+        "longDesc": "This is made back then when I was in grade 8 and was learning about functions. I was curious about what different functions look like so I made this shitty program (in today's view) and showed it to my class.\\n\\nThe program is written in Lua using [Gnad](https://www.gnad.net/) which is based on [Love2D](https://love2d.org/). It supports zooming using the mouse wheel but does not support panning. The font is blurry because I didn't figure out how to use a larger font, instead I just scale up the small font after rendering. Also backspace deletes all the characters because I didn't know how to use \`subString\` in lua.\\n\\nIt works by \`eval\`ing the function, meaning you can input any valid lua expression.",
+        "screenshots": [
+            "159996751245692",
+            "159996751768679",
+            "159996752754209"
+        ],
         "recordings": []
     },
     {
@@ -292,12 +301,27 @@ const projectsData = `[
         "projectName": "The Light (New)",
         "icon": "",
         "color": "",
-        "tags": [],
-        "shortDesc": "",
-        "buttons": [],
-        "longDesc": "",
-        "screenshots": [],
-        "recordings": []
+        "tags": ["Java"],
+        "shortDesc": "A rewrite of \\"The Light\\" in Java.",
+        "buttons": [
+            [
+                "Source Code",
+                "https://cloud.pegasis.site/s/g3NqMyGmYZ2HATJ"
+            ],
+            [
+                "jar Download",
+                "https://cloud.pegasis.site/s/onoBWGBeyoRGeoZ"
+            ]
+        ],
+        "longDesc": "See the original [The Light](The%20Light).\\n\\nThis is a rewrite in Java using the drawing library of [Processing](https://processing.org/).\\n\\nNot implemented:\\n- Level achievements\\n- Level completed screen\\n\\nAdded:\\n- Hot reload debug mode (using [LuaJ](https://github.com/darmie/LuaJ))\\n- Level is defined by code",
+        "screenshots": [
+            "159997405921819",
+            "159997407297362",
+            "159997408257689"
+        ],
+        "recordings": [
+            "OeHKsE6gwTo"
+        ]
     },
     {
         "projectName": "Tween Test",
@@ -320,10 +344,18 @@ const projectsData = `[
             [
                 "Github",
                 "https://github.com/PegasisForever/Chart_Maker"
+            ],
+            [
+                "Download Windows",
+                "https://cloud.pegasis.site/s/xDDmfYmJn7dCcz4"
             ]
         ],
         "longDesc": " ",
-        "screenshots": [],
+        "screenshots": [
+            "159996328781813",
+            "159996329202349",
+            "159996329029582"
+        ],
         "recordings": []
     },
     {

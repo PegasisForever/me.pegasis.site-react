@@ -50,11 +50,15 @@ export default class ProjectPage extends React.Component {
                     <div className={"screenshots"}>
                         {project.recordings.map((recording) =>
                             <YoutubeEmbedded key={recording} id={recording}/>)}
-                        {project.screenshots.map((screenshot) =>
+                        {project.screenshots.map((screenshot) =><a
+                            href={"/screenshots/" + screenshot + imgExtension}
+                            target={"_blank"}
+                            rel={"noopener noreferrer"}>
                             <img className={"screenshot"}
                                  key={screenshot}
                                  src={"/screenshots/" + screenshot + imgExtension}
-                                 alt={"screenshot"}/>)}
+                                 alt={"screenshot"}/>
+                        </a>)}
                     </div>
                     <div className={"longdesc"} dangerouslySetInnerHTML={{__html: parseMarkDown(project.longDesc)}}/>
                 </div>
