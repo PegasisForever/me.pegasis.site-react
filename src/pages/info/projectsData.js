@@ -597,6 +597,12 @@ function compareProjectWeight(a, b) {
     return comparison
 }
 
+const projectJson = JSON.parse(projectsData)
+const projectMap = new Map()
+for (let project of projectJson) {
+    projectMap.set(project.projectName, project)
+}
+
 export function getProjectsList(searchText) {
     let projects = JSON.parse(projectsData)
     if (searchText === undefined || searchText === "") {
@@ -645,8 +651,7 @@ export function getProjectsList(searchText) {
 }
 
 export function getProject(name) {
-    const projects = JSON.parse(projectsData)
-    const project = projects.find((project) => project.projectName === name)
+    const project = projectMap.get(name)
     if (project && (project.longDesc !== "" || project.longDescLink !== "" || project.buttons.length > 0)) {
         return project
     } else {
