@@ -17,6 +17,45 @@ function NavBar(props) {
     </header>
 }
 
+class LongDescription extends React.Component {
+    constructor(props) {
+        super(props)
+
+        let innerHTML = ""
+        if (props.project.longDescLink !== "") {
+            let baseMarkdown = ""
+            if (props.project.longDesc !== "") {
+                baseMarkdown = props.project.longDesc + "\n---\n"
+            }
+
+            innerHTML = parseMarkDown(baseMarkdown + "*Loading.....*")
+            fetch(props.project.longDescLink)
+                .then(response => response.text())
+                .then(md => {
+                    this.setState({
+                        innerHTML: parseMarkDown(baseMarkdown + md),
+                    })
+                })
+                .catch(error => {
+                    this.setState({
+                        innerHTML: parseMarkDown(baseMarkdown + "*Loading Failed*"),
+                    })
+                    console.error(error)
+                })
+        } else if (props.project.longDesc !== "") {
+            innerHTML = parseMarkDown(props.project.longDesc)
+        }
+
+        this.state = {
+            innerHTML: innerHTML,
+        }
+    }
+
+    render() {
+        return <div className={"longdesc"} dangerouslySetInnerHTML={{__html: this.state.innerHTML}}/>
+    }
+}
+
 
 export default class ProjectPage extends React.Component {
     render() {
@@ -50,7 +89,7 @@ export default class ProjectPage extends React.Component {
                     <div className={"screenshots"}>
                         {project.recordings.map((recording) =>
                             <YoutubeEmbedded key={recording} id={recording}/>)}
-                        {project.screenshots.map((screenshot) =><a
+                        {project.screenshots.map((screenshot) => <a
                             href={"/screenshots/" + screenshot + imgExtension}
                             target={"_blank"}
                             rel={"noopener noreferrer"}>
@@ -60,7 +99,7 @@ export default class ProjectPage extends React.Component {
                                  alt={"screenshot"}/>
                         </a>)}
                     </div>
-                    <div className={"longdesc"} dangerouslySetInnerHTML={{__html: parseMarkDown(project.longDesc)}}/>
+                    <LongDescription project={project}/>
                 </div>
             </div>
         </Fragment>

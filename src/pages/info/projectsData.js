@@ -16,6 +16,7 @@ const projectsData = `[
             ]
         ],
         "longDesc": "# Supports Multi-thread Chatting\\n\\nThis concept may looks confusing, but let me explain. Implementing it is one of the main reason why I created GROK. Imaging you are discussing a math problem with your friend use text. During the discussion, one of your friend's message gives you a new idea on how to solve this problem, what can you do?\\n\\n1. Interrupt the discussion and talk about your idea\\n2. Keep the idea in mind until current discussion finishes\\n\\nSee, neither of them is satisfying. This is where \\"Multi-thread Chatting\\" comes in. Threads separate a conversation into different topics. For example, you can continue discussing in thread one and talk about your new idea in thread two. Messages you send in both thread will all be delivered to your friends --- but separated so two ideas won't be mixed up and what does \\"it\\" referring to is clear.\\n\\n# Follows Material Design\\n\\nEveryone loves Material Design (I hope so). So do I. Material Design is a great guideline to organize my UI and make GROK feels native.\\n\\nI love the ripple effect so much.\\n\\n# Shockingly Fast\\n\\nI spent a lot of time on optimizing GROK to achieve the minimum size and resource consumption.\\n\\nBy using native components, only add code that is necessary, fully utilize multiple cores and lazy loading, I'm confident to say that GROK is faster than 95% of all the messaging apps on the world.\\n",
+        "longDescLink": "",
         "screenshots": [
             "grok-1",
             "grok-2",
@@ -44,6 +45,7 @@ const projectsData = `[
             ["Download Server", "https://cloud.pegasis.site/s/etoMGQQqjNBrqXC"]
         ],
         "longDesc": "Coding requires so much scrolling that the wheel on my mouse became \\"smooth\\" - no \\"levelly\\" feelings any more. Why don't scroll on a touchscreen?",
+        "longDescLink": "",
         "screenshots": [
             "rwheel-1"
         ],
@@ -71,6 +73,7 @@ const projectsData = `[
             ["Download Android", "https://cloud.pegasis.site/s/Y6RmdLbKAY3o7Pn"]
         ],
         "longDesc": "In Mirrors Killer, you can change the focus length of the mirror, object height and distance using silders to understand how concave and convex mirror reflects light.",
+        "longDescLink": "",
         "screenshots": [
             "mirrors-killer-1"
         ],
@@ -92,6 +95,7 @@ const projectsData = `[
             ["Download Android", "https://cloud.pegasis.site/s/LZjmGGxzgd2oFJd"]
         ],
         "longDesc": " ",
+        "longDescLink": "",
         "screenshots": [
             "rng-1",
             "rng-2",
@@ -114,6 +118,7 @@ const projectsData = `[
             ["Download Android", "https://cloud.pegasis.site/s/zGR77NTNi2TYjMK"]
         ],
         "longDesc": "The official client for teach assist is so ugly and hard to use. So I made a better one.\\n\\n- Material Design\\n- Trend chart\\n- Better small screen support\\n- View mark offline\\n",
+        "longDescLink": "",
         "screenshots": [],
         "recordings": []
     },
@@ -125,6 +130,7 @@ const projectsData = `[
         "shortDesc": "A desktop version of Google Translate.",
         "buttons": [["Download","https://cloud.pegasis.site/s/frjFDPgjsij7AaJ"]],
         "longDesc": "Google rarely make applications for desktops. Google Translate webpage take times to load and can't switch language automaticly. So I made a desktop application using electron and Google translate API. When you type English in the text field, it translates the text into Chinese; when you type in Chinese, it translates the text to the English. You don't need to switch modes.",
+        "longDescLink": "",
         "screenshots": [
             "gtranslate-1",
             "gtranslate-2"
@@ -142,6 +148,7 @@ const projectsData = `[
             ["Client (Github)","https://github.com/PegasisForever/grok_file_transfer"]
         ],
         "longDesc": "Transferring files between different devices is sometimes very inconvenient. Using cloud drive is one of the options but you need to login on both devices ,upload and download files manually.\\n\\nGROK File Transfer simplify this process. GFT gives a unique five-digit unique ID to each device installed it and generates a QR code. When you need to send files to another machine, you just need to enter the ID or scan the code using your device and accept the request on the another device.",
+        "longDescLink": "",
         "screenshots": [
             "gft-1",
             "gft-2",
@@ -157,6 +164,7 @@ const projectsData = `[
         "shortDesc": "A tool to solve BlockNums.",
         "buttons": [["Github","https://github.com/PegasisForever/BlockNums_Solver"]],
         "longDesc": "A tool to solve BlockNums.",
+        "longDescLink": "",
         "screenshots": [
             "bn-solver-1",
             "bn-solver-2"
@@ -171,6 +179,7 @@ const projectsData = `[
         "shortDesc": "Solutions for ECOO & CCC past contests.",
         "buttons": [["Github","https://github.com/PegasisForever/CompetionPractice"]],
         "longDesc": "Solutions for ECOO & CCC past contests.",
+        "longDescLink": "",
         "screenshots": [],
         "recordings": []
     },
@@ -182,6 +191,7 @@ const projectsData = `[
         "shortDesc": "A simple tool to create Huffman code from an array of chars.",
         "buttons": [["Github","https://github.com/PegasisForever/HuffmanCode"]],
         "longDesc": "A simple tool to create Huffman code from an array of chars.",
+        "longDescLink": "",
         "screenshots": [],
         "recordings": []
     },
@@ -197,6 +207,7 @@ const projectsData = `[
         "shortDesc": "Something similar to \\"Minecraft\\" made in 8 days.",
         "buttons": [["Github","https://github.com/PegasisForever/KevelCraft"]],
         "longDesc": "Something similar to \\"Minecraft\\" made in 8 days.",
+        "longDescLink": "",
         "screenshots": [],
         "recordings": []
     },
@@ -208,6 +219,7 @@ const projectsData = `[
         "shortDesc": "A command line tool to check PowerSchool accounts.",
         "buttons": [["Github","https://github.com/PegasisForever/powerschool_account_check"]],
         "longDesc": "A command line tool to check PowerSchool accounts.",
+        "longDescLink": "",
         "screenshots": [],
         "recordings": []
     },
@@ -224,6 +236,7 @@ const projectsData = `[
             ]
         ],
         "longDesc": "This is made back then when I was in grade 8 and was learning about functions. I was curious about what different functions look like so I made this shitty program (in today's view) and showed it to my class.\\n\\nThe program is written in Lua using [Gnad](https://www.gnad.net/) which is based on [Love2D](https://love2d.org/). It supports zooming using the mouse wheel but does not support panning. The font is blurry because I didn't figure out how to use a larger font, instead I just scale up the small font after rendering. Also backspace deletes all the characters because I didn't know how to use \`subString\` in lua.\\n\\nIt works by \`eval\`ing the function, meaning you can input any valid lua expression.",
+        "longDescLink": "",
         "screenshots": [
             "159996751245692",
             "159996751768679",
@@ -239,6 +252,7 @@ const projectsData = `[
         "shortDesc": "",
         "buttons": [],
         "longDesc": "",
+        "longDescLink": "",
         "screenshots": [],
         "recordings": []
     },
@@ -250,6 +264,7 @@ const projectsData = `[
         "shortDesc": "",
         "buttons": [],
         "longDesc": "",
+        "longDescLink": "",
         "screenshots": [],
         "recordings": []
     },
@@ -261,6 +276,7 @@ const projectsData = `[
         "shortDesc": "",
         "buttons": [],
         "longDesc": "",
+        "longDescLink": "",
         "screenshots": [],
         "recordings": []
     },
@@ -272,6 +288,7 @@ const projectsData = `[
         "shortDesc": "",
         "buttons": [],
         "longDesc": "",
+        "longDescLink": "",
         "screenshots": [],
         "recordings": []
     },
@@ -283,6 +300,7 @@ const projectsData = `[
         "shortDesc": "",
         "buttons": [],
         "longDesc": "",
+        "longDescLink": "",
         "screenshots": [],
         "recordings": []
     },
@@ -294,6 +312,7 @@ const projectsData = `[
         "shortDesc": "",
         "buttons": [],
         "longDesc": "",
+        "longDescLink": "",
         "screenshots": [],
         "recordings": []
     },
@@ -314,6 +333,7 @@ const projectsData = `[
             ]
         ],
         "longDesc": "See the original [The Light](The%20Light).\\n\\nThis is a rewrite in Java using the drawing library of [Processing](https://processing.org/).\\n\\nNot implemented:\\n- Level achievements\\n- Level completed screen\\n\\nAdded:\\n- Hot reload debug mode (using [LuaJ](https://github.com/darmie/LuaJ))\\n- Level is defined by code",
+        "longDescLink": "",
         "screenshots": [
             "159997405921819",
             "159997407297362",
@@ -329,6 +349,7 @@ const projectsData = `[
         "color": "",
         "tags": [],
         "shortDesc": "",
+        "longDescLink": "",
         "buttons": [],
         "longDesc": "",
         "screenshots": [],
@@ -351,6 +372,7 @@ const projectsData = `[
             ]
         ],
         "longDesc": " ",
+        "longDescLink": "",
         "screenshots": [
             "159996328781813",
             "159996329202349",
@@ -371,6 +393,7 @@ const projectsData = `[
             ]
         ],
         "longDesc": " ",
+        "longDescLink": "",
         "screenshots": [],
         "recordings": []
     },
@@ -384,7 +407,8 @@ const projectsData = `[
     ["GitHub (Mobile)","https://github.com/PegasisForever/YRDSB-Teach-Assist-Mobile"],
             ["GitHub (Website)","https://github.com/PegasisForever/YRDSB-Teach-Assist-Web"],
             ["GitHub (Server)","https://github.com/PegasisForever/Fetch-TA-Data"]],
-        "longDesc": "- Notification\\n- Beautiful charts and diagrams\\n- Multi-user support\\n- Dark mode support\\n- View marks offline\\n- View marks even if it's not on the TA website\\n- View archived marks (In development)\\n- View time line (In development)\\n- Share your marks with link (In development)\\n- Hot-upgradable server-side parser",
+        "longDesc": "",
+        "longDescLink": "https://raw.githubusercontent.com/PegasisForever/YRDSB-Teach-Assist-Mobile/master/README.md",
         "screenshots": [
             "ta-1",
             "ta-2",
@@ -394,6 +418,18 @@ const projectsData = `[
             "ta-6",
             "ta-7"
         ],
+        "recordings": []
+    },
+    {
+        "projectName": "CCC Marker",
+        "icon": "",
+        "color": "",
+        "tags": ["Kotlin"],
+        "shortDesc": "A command line tool to check CCC solutions against .in and .out files.",
+        "buttons": [["GitHub","https://github.com/PegasisForever/ccc_marker"]],
+        "longDesc": "",
+        "longDescLink": "https://raw.githubusercontent.com/PegasisForever/ccc_marker/master/README.md",
+        "screenshots": [],
         "recordings": []
     }
 ]`
@@ -471,7 +507,7 @@ export function getProjectsList(searchText) {
 export function getProject(name) {
     const projects = JSON.parse(projectsData)
     const project = projects.find((project) => project.projectName === name)
-    if (project && project.longDesc !== "") {
+    if (project && (project.longDesc !== "" || project.longDescLink !== "" || project.buttons.length > 0)) {
         return project
     } else {
         return undefined

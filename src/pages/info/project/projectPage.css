@@ -79,6 +79,19 @@
     border-radius: 6px;
 }
 
+.project-page .longdesc pre {
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 6px;
+    padding: 16px;
+    overflow-x: scroll;
+}
+
+.project-page .longdesc pre code {
+    background-color: transparent;
+    font-size: 100%;
+    line-height: 18px;
+}
+
 .project-page .screenshots {
     overflow: auto;
     white-space: nowrap;

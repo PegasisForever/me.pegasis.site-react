@@ -21,7 +21,7 @@ export default function ProjectCard(props) {
         <div className={"tags-wrapper"}>
             {project.tags.map((tag) => (<span key={tag} className={"tag"}>{tag}</span>))}
         </div>
-        {project.longDesc !== "" ? <Link
+        {(project.longDesc !== "" || project.longDescLink !== "" || project.buttons.length > 0) ? <Link
             to={"/info/project/" + project.projectName}
             className={"colored-btn"}
             style={{backgroundColor: "#" + color}}>
