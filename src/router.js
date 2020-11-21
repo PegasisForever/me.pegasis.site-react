@@ -12,7 +12,7 @@ import InfoNavBar from "./pages/info/navbar/navbar"
 import AboutPage from "./pages/info/about/about"
 import ResourcesPage from "./pages/info/resources/ResourcesPage"
 import ProjectsAZPage from "./pages/info/projects/az/ProjectsAZPage"
-import RecommendProjectsPage from "./pages/info/projects/recommend/RecommendProjectsPage"
+import FeaturedProjectsPage from "./pages/info/projects/recommend/FeaturedProjectsPage"
 import ProjectPage from "./pages/info/project/ProjectPage"
 import {getProject} from "./pages/info/projectsData"
 
@@ -73,8 +73,8 @@ export default function AppRouter() {
                                 <Route path="/info/projects/search/:searchText">
                                     <ProjectListRedirect/>
                                 </Route>
-                                <Route exact={true} path="/info/projects/recommend">
-                                    <RecommendProjectsPage/>
+                                <Route exact={true} path="/info/projects/featured">
+                                    <FeaturedProjectsPage/>
                                 </Route>
                                 <Route path="*">
                                     <Redirect to="/info/projects/a-z"/>

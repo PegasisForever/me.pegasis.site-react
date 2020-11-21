@@ -6,7 +6,7 @@ import "../../../common.css"
 export default function ProjectTab(props) {
     return <div className={"project-tab-container"}>
         <Link className={props.page === "recommend" ? "active" : ""}
-              to={"/info/projects/recommend"}>
+              to={"/info/projects/featured"}>
             FEATURED
         </Link>
         <Link className={props.page === "a-z" ? "active" : ""}

@@ -1,10 +1,10 @@
 import React from "react"
-import "./recommendProjectsPage.css"
+import "./featuredProjectsPage.css"
 import InfoBar from "../common/InfoBar"
 import ProjectTab from "../common/ProjectTab"
 import LinearLayout from "../../../../components/linearLayout"
 
-export default class RecommendProjectsPage extends React.Component {
+export default class FeaturedProjectsPage extends React.Component {
     render() {
         const isMobile = window.innerWidth <= 600
         return <div className={"page-root"}>
