@@ -658,3 +658,5 @@ export function getProject(name) {
         return undefined
     }
 }
+
+export {projectMap}
