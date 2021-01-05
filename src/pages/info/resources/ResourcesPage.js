@@ -33,8 +33,14 @@ export default class ResourcesPage extends React.Component {
 
                 <div className={"link-card-list"}>
                     <LinkCard
+                        title={"Site Map"}
+                        link={"pegas.is/sitemap.txt"}/>
+                    <LinkCard
                         title={"My old personal website"}
-                        link={"www.pegasis.site"}/>
+                        link={"pegas.is/old"}/>
+                    <LinkCard
+                        title={"My development website"}
+                        link={"dev.pegasis.site"}/>
                     <LinkCard
                         title={"EN-NP Volunteer Management System"}
                         link={"volunteer.ensonyan.com"}/>
