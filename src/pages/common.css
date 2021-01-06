@@ -1,5 +1,6 @@
 @font-face {
     font-family: "Fira Sans";
+    font-display: swap;
     src: url(/FiraSans-Regular.woff);
 }
 
