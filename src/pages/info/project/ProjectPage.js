@@ -2,7 +2,7 @@ import React, {Fragment} from "react"
 import "./projectPage.css"
 import "../../common.css"
 import YoutubeEmbedded from "../../../components/YoutubeEmbedded"
-import {getImgExtension, parseMarkDown} from "../../../tools"
+import {getImgExtension, hasImageExtension, parseMarkDown} from "../../../tools"
 import TagBar from "./TagBar"
 import ButtonBar from "./ButtonBar"
 
@@ -89,15 +89,16 @@ export default class ProjectPage extends React.Component {
                     <div className={"screenshots"}>
                         {project.recordings.map((recording) =>
                             <YoutubeEmbedded key={recording} id={recording}/>)}
-                        {project.screenshots.map((screenshot) => <a
-                            href={"/screenshots/" + screenshot + imgExtension}
-                            target={"_blank"}
-                            rel={"noopener noreferrer"}>
-                            <img className={"screenshot"}
-                                 key={screenshot}
-                                 src={"/screenshots/" + screenshot + imgExtension}
-                                 alt={"screenshot"}/>
-                        </a>)}
+                        {project.screenshots.map((screenshot) => "/screenshots/" + (hasImageExtension(screenshot) ? screenshot : (screenshot + imgExtension)))
+                            .map((src) => <a
+                                href={src}
+                                target={"_blank"}
+                                rel={"noopener noreferrer"}>
+                                <img className={"screenshot"}
+                                     key={src}
+                                     src={src}
+                                     alt={"screenshot"}/>
+                            </a>)}
                     </div>
                     <LongDescription project={project}/>
                 </div>

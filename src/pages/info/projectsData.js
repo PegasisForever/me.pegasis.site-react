@@ -385,13 +385,15 @@ const projectsData = `[
         "longDesc": "",
         "longDescLink": "https://raw.githubusercontent.com/PegasisForever/YRDSB-Teach-Assist-Mobile/master/README.md",
         "screenshots": [
-            "ta-1",
-            "ta-2",
-            "ta-3",
-            "ta-4",
-            "ta-5",
-            "ta-6",
-            "ta-7"
+            "ta-1.png",
+            "ta-2.png",
+            "ta-3.png",
+            "ta-4.png",
+            "ta-5.png",
+            "ta-6.png",
+            "ta-7.png",
+            "ta-8.png",
+            "ta-9.png"
         ],
         "recordings": []
     },

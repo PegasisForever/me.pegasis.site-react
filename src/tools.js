@@ -18,6 +18,10 @@ export function getImgExtension() {
     return imgSuffix
 }
 
+export function hasImageExtension(name){
+    return name.endsWith(".png") || name.endsWith(".webp") || name.endsWith(".jpg")
+}
+
 export function clearSelection() {
     if(document.selection && document.selection.empty) {
         document.selection.empty();
