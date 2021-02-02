@@ -34,7 +34,7 @@ export default class AboutPage extends React.Component {
             <div className={"info-div"}>
                 <h1>What I'm Doing</h1>
                 <div className={"line"}/>
-                <p>Perparing for University of Waterloo<br/>
+                <p>Preparing for University of Waterloo<br/>
                     Typora-cli<br/>
                     Teach Assist client<br/>
                     Contests?&nbsp;

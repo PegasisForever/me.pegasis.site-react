@@ -1,14 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
-    <serverData>
-      <paths name="k.pegasis.site">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/var/www/me.pegasis.site" local="$PROJECT_DIR$/build" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-    </serverData>
-  </component>
+  <component name="PublishConfigData" serverName="me." remoteFilesAllowedToDisappearOnAutoupload="false" />
 </project>
