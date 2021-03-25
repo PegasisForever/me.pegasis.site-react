@@ -19,6 +19,7 @@ function DesktopNavBar(props) {
               to={"/info/resources"}>
             Resources & Links
         </Link>
+        <a className={"nav-btn"} href="https://notes.pegas.is/">Notes</a>
         <a className={"nav-btn"} href="https://api.pegasis.site/docs">API</a>
     </header>
 }
@@ -66,6 +67,9 @@ class MobileNavBar extends React.Component {
                       onClick={this.close}>
                     Resources & Links
                 </Link>
+                <a className="mobile-nav-btn" href="https://notes.pegas.is/">
+                    Notes
+                </a>
                 <a className="mobile-nav-btn" href="https://api.pegasis.site/docs">
                     API
                 </a>
