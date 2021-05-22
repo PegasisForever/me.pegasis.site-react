@@ -51,7 +51,7 @@ class MobileNavBar extends React.Component {
                 <p className={"title"}>{title}</p>
                 <button className={"expend-btn"} onClick={this.toggleOpen}/>
             </header>
-            <div className={"mob-nav-drop-div header-shadow"} style={{top: this.state.isOpen ? "0" : "-220px"}}>
+            <div className={"mob-nav-drop-div header-shadow"} style={{top: this.state.isOpen ? "0" : "-265px"}}>
                 <Link className={"mobile-nav-btn " + (page === "about" ? "mobile-nav-btn-active" : "")}
                       to={"/info/about"}
                       onClick={this.close}>
