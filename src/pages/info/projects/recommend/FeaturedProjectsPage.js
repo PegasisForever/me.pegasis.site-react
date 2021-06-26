@@ -8,6 +8,7 @@ import {getProject} from "../../projectsData"
 
 function ProjectList() {
     const featuredProjects=[
+        getProject("Puno"),
         getProject("YRDSB Teach Assist Mobile"),
         getProject("YRDSB Teach Assist Website"),
         getProject("YRDSB Teach Assist Server"),

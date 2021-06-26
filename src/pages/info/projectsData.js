@@ -1,5 +1,30 @@
 const projectsData = `[
     {
+        "projectName": "Puno",
+        "icon": "",
+        "color":"",
+        "tags": [
+            "React",
+            "Typescript",
+            "Firebase"
+        ],
+        "shortDesc": "A better version of uno. Play with your friends online!",
+        "buttons": [
+            [
+                "Website",
+                "https://puno.pegas.is/"
+            ]
+        ],
+        "longDesc": "# Features\\n\\n1. Runs in your browser & optimized for mobile and desktop\\n2. No login, no ads, no bs\\n3. Unlimited players\\n4. Players can join at the middle of a game\\n5. Great animation\\n\\n# Puno Specific Rules\\n\\nI understand everyone has their own set of rules for uno. Puno uses a set of rules my friends and I found most fun. However if there're enough interest, I may add some customization options for rules.\\n\\n1. You can put down a +2 after a +2 to let the next person draw 4. (the same goes for +4 and +4, +4 and +2 as long as they have the same color)\\n2. Your turn is not skipped after you draw cards\\n3. You can only use number card as your last card\\n4. You don't need to say uno for the last card (I mean I can put a button there but that would be too obvious... You can still say uno in discord voice chat if you want)\\n\\n# Technical Details\\n\\nI coded this thing in less than a week, it's basically just a huge mess of spaghetti, so I'm not planning to open source anytime soon :)\\n\\nEverything is calculated / generated on client, there is no server side validation, which means you can easily hack your game if you want. However considering Puno is only meant to be played within friends and without a global rank, I see this as a time saving measure rather than a security flaw. (Ah, classic this is a feature not a bug)\\n\\n# Hope you enjoy playing it!",
+        "longDescLink": "",
+        "screenshots": [
+            "162470085268885",
+            "162470085480030",
+            "162470085641784"
+        ],
+        "recordings": []
+    },
+    {
         "projectName": "GROK",
         "icon": "logos/grok_logo.svg",
         "color":"90c200",
@@ -607,7 +632,7 @@ for (let project of projectJson) {
 
 export function getProjectsList(searchText) {
     let projects = JSON.parse(projectsData)
-    if (searchText === undefined || searchText === "") {
+    if (searchText === undefined || searchText === '') {
         projects.sort(compareProjectName)
         return projects
     } else {
@@ -617,24 +642,24 @@ export function getProjectsList(searchText) {
         const longDescW = 1.5
         let result = []
 
-        let keyWords = searchText.split(" ").filter((keyWord) => keyWord !== "")
+        let keyWords = searchText.split(' ').filter((keyWord) => keyWord !== '')
         projects.forEach((project) => {
             let weight = 0
             keyWords.forEach((keyWord) => {
                 try {
-                    weight += project.projectName.match(new RegExp(keyWord, "gi")).length * titleW
+                    weight += project.projectName.match(new RegExp(keyWord, 'gi')).length * titleW
                 } catch (ignore) {
                 }
                 try {
-                    weight += project.shortDesc.match(new RegExp(keyWord, "gi")).length * shortDescW
+                    weight += project.shortDesc.match(new RegExp(keyWord, 'gi')).length * shortDescW
                 } catch (ignore) {
                 }
                 try {
-                    weight += project.longDesc.match(new RegExp(keyWord, "gi")).length * longDescW
+                    weight += project.longDesc.match(new RegExp(keyWord, 'gi')).length * longDescW
                 } catch (ignore) {
                 }
                 project.tags.forEach((tag) => {
-                    if (tag.match(new RegExp(keyWord, "gi"))) {
+                    if (tag.match(new RegExp(keyWord, 'gi'))) {
                         weight += tagW
                     }
                 })
@@ -654,7 +679,7 @@ export function getProjectsList(searchText) {
 
 export function getProject(name) {
     const project = projectMap.get(name)
-    if (project && (project.longDesc !== "" || project.longDescLink !== "" || project.buttons.length > 0)) {
+    if (project && (project.longDesc !== '' || project.longDescLink !== '' || project.buttons.length > 0)) {
         return project
     } else {
         return undefined

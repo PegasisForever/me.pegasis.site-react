@@ -15,7 +15,6 @@ import ProjectsAZPage from "./pages/info/projects/az/ProjectsAZPage"
 import FeaturedProjectsPage from "./pages/info/projects/recommend/FeaturedProjectsPage"
 import ProjectPage from "./pages/info/project/ProjectPage"
 import {getProject} from "./pages/info/projectsData"
-import Footer from './components/Footer'
 
 function ProjectPageRedirect() {
     let {projectName} = useParams()
@@ -60,12 +59,10 @@ export default function AppRouter() {
                             <ScrollToTop/>
                             <InfoNavBar key={"nav"} page={"about"}/>
                             <AboutPage/>
-                            <Footer/>
                         </Route>
                         <Route path="/info/project/:projectName">
                             <ScrollToTop/>
                             <ProjectPageRedirect/>
-                            <Footer/>
                         </Route>
                         <Route path="/info/projects">
                             <InfoNavBar key={"nav"} page={"projects"}/>
@@ -83,13 +80,11 @@ export default function AppRouter() {
                                     <Redirect to="/info/projects/a-z"/>
                                 </Route>
                             </Switch>
-                            <Footer/>
                         </Route>
                         <Route exact={true} path="/info/resources">
                             <ScrollToTop/>
                             <InfoNavBar key={"nav"} page={"resources"}/>
                             <ResourcesPage/>
-                            <Footer/>
                         </Route>
                         <Route path="*">
                             <ScrollToTop/>
