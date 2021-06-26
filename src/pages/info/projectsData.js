@@ -8,7 +8,7 @@ const projectsData = `[
             "Typescript",
             "Firebase"
         ],
-        "shortDesc": "A better version of uno. Play with your friends online!",
+        "shortDesc": "A better version of uno. Play with your friends in your browser!",
         "buttons": [
             [
                 "Website",
